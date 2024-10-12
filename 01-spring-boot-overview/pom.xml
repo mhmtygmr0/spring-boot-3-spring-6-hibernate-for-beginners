@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.luv2code.springboot.demo</groupId>
-	<artifactId>overview</artifactId>
+	<artifactId>01-spring-boot-overview</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mycoolapp</name>
 	<description>Demo project for Spring Boot</description>
