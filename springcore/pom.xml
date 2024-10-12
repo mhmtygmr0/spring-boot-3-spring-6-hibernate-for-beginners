@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.luv2code</groupId>
-	<artifactId>constructor-injection</artifactId>
+	<artifactId>springcore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springcoredemo</name>
 	<description>Demo project for Spring Boot</description>
