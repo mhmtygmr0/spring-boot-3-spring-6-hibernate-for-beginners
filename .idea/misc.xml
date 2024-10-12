@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/mycoolapp/pom.xml" />
         <option value="$PROJECT_DIR$/constructor-injection/pom.xml" />
         <option value="$PROJECT_DIR$/springcore/pom.xml" />
+        <option value="$PROJECT_DIR$/01-spring-boot-overview/pom.xml" />
+        <option value="$PROJECT_DIR$/02-spring-boot-spring-core/pom.xml" />
       </list>
     </option>
   </component>
