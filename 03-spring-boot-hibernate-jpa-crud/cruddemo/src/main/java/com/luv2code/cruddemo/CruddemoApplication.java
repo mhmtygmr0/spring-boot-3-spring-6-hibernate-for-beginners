@@ -21,7 +21,7 @@ public class CruddemoApplication {
         return runner -> {
             // this.createStudent(studentDAO);
 
-            // this.createMultipleStudent(studentDAO);
+            this.createMultipleStudent(studentDAO);
 
             // this.readStudent(studentDAO);
 
@@ -112,7 +112,7 @@ public class CruddemoApplication {
 
     private void createMultipleStudent(StudentDAO studentDAO) {
         // create multiple students
-        System.out.println("Creating new student object ...");
+        System.out.println("Creating 3 student object ...");
         Student tempStudent1 = new Student("John", "Doe", "john@luv2code.com");
         Student tempStudent2 = new Student("Mary", "Public", "mary@luv2code.com");
         Student tempStudent3 = new Student("Bonita", "Applebum", "bonita@luv2code.com");
