@@ -33,7 +33,7 @@ public class CruddemoApplication {
 
             // this.deleteStudent(studentDAO);
 
-            this.deleteAllStudent(studentDAO);
+            // this.deleteAllStudent(studentDAO);
         };
     }
 
