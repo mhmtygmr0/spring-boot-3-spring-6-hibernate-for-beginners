@@ -16,6 +16,7 @@ public class StudentRestController {
 
     private List<Student> theStudents;
 
+
     // define @PostConstruct to load the student data ... only once!
     @PostConstruct
     public void loadData() {
@@ -26,14 +27,15 @@ public class StudentRestController {
         this.theStudents.add(new Student("Mary", "Smith"));
     }
 
+
     // define endpoint for "/students" - return a list of students
     @GetMapping("/students")
     public List<Student> getStudents() {
         return this.theStudents;
     }
 
-    // define endpoint or "/students/{studentId}" - return student at index
 
+    // define endpoint or "/students/{studentId}" - return student at index
     @GetMapping("/students/{studentId}")
     public Student getStudent(@PathVariable int studentId) {
 
