@@ -1,11 +1,9 @@
 package com.luv2code.__spring_boot_rest_crud.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 public class Student {
 
