@@ -1,8 +1,10 @@
 package com.luv2code.__spring_boot_rest_crud.rest;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class StudentErrorResponse {
 
     private int status;
@@ -10,11 +12,5 @@ public class StudentErrorResponse {
     private long timeStamp;
 
     public StudentErrorResponse() {
-    }
-
-    public StudentErrorResponse(int status, String message, long timeStamp) {
-        this.status = status;
-        this.message = message;
-        this.timeStamp = timeStamp;
     }
 }
