@@ -20,11 +20,11 @@ public class StudentRestController {
     @PostConstruct
     public void loadData() {
 
-        theStudents = new ArrayList<>();
+        this.theStudents = new ArrayList<>();
 
-        theStudents.add(new Student("Poornima", "Patel"));
-        theStudents.add(new Student("Mario", "Rossi"));
-        theStudents.add(new Student("Mary", "Smith"));
+        this.theStudents.add(new Student("Poornima", "Patel"));
+        this.theStudents.add(new Student("Mario", "Rossi"));
+        this.theStudents.add(new Student("Mary", "Smith"));
     }
 
 
@@ -33,7 +33,7 @@ public class StudentRestController {
     @GetMapping("/students")
     public List<Student> getStudents() {
 
-        return theStudents;
+        return this.theStudents;
     }
 
     // define endpoint or "/students/{studentId}" - return student at index
@@ -45,11 +45,11 @@ public class StudentRestController {
 
         // check the studentId again list size
 
-        if ( (studentId >= theStudents.size()) || (studentId < 0)) {
+        if ((studentId >= this.theStudents.size()) || (studentId < 0)) {
             throw new StudentNotFoundException("Student id not found - " + studentId);
         }
 
-        return theStudents.get(studentId);
+        return this.theStudents.get(studentId);
     }
 
     // Add an exception handler using @ExceptionHandler
