@@ -2,8 +2,6 @@ package com.luv2code.__spring_boot_rest_crud.rest;
 
 import com.luv2code.__spring_boot_rest_crud.entity.Student;
 import jakarta.annotation.PostConstruct;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
