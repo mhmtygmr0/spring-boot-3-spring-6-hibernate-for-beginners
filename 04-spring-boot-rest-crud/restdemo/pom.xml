@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.luv2code</groupId>
-	<artifactId>04-spring-boot-rest-crud</artifactId>
+	<artifactId>restdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>04-spring-boot-rest-crud</name>
 	<description>Demo project for Spring Boot</description>

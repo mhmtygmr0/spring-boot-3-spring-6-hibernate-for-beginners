@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/02-spring-boot-spring-core/pom.xml" />
         <option value="$PROJECT_DIR$/03-spring-boot-hibernate-jpa-crud/cruddemo/pom.xml" />
         <option value="$PROJECT_DIR$/04-spring-boot-rest-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/04-spring-boot-rest-crud/restdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/04-spring-boot-rest-crud/cruddemo/pom.xml" />
       </list>
     </option>
   </component>
