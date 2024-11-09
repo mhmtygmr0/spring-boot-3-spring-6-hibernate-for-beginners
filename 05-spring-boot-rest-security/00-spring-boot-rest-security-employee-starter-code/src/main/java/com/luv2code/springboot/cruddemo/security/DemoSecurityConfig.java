@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 public class DemoSecurityConfig {
 
     // add support for JDBC ... no more hardcoded users :-)
-
     @Bean
     public UserDetailsManager userDetailsManager(DataSource dataSource) {
         return new JdbcUserDetailsManager(dataSource);
