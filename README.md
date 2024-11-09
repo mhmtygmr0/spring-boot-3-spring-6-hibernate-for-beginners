@@ -6,8 +6,7 @@ This repository contains projects created while following the [Spring & Hibernat
 - I am also developing my skills in **Spring Boot** and **Spring Framework** through this project. 
 - This project explores various applications built with **Spring Boot 3**, **Spring Framework 6**, and **Hibernate**.
 
-Instructor's original repository: [darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners](https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners) ###
-
+Instructor's original repository: [darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners](https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners)
 ## Contents ###
 
 Throughout this course project, the following topics are covered:
