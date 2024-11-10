@@ -26,7 +26,7 @@ public class DemoSecurityConfig {
 
         // define query to retrieve the authorities/roles by username
         jdbcUserDetailsManager.setAuthoritiesByUsernameQuery(
-                "SELECT user_id, roles FROM roles WHERE user_id=?");
+                "SELECT user_id, role FROM roles WHERE user_id=?");
 
         return jdbcUserDetailsManager;
     }
