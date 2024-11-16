@@ -24,7 +24,7 @@ public class StudentController {
     @PostMapping("/processStudentForm")
     public String processForm(@ModelAttribute("student") Student student) {
         // log the input data
-        System.out.printf("theStudent: " + student.getFirstName() + " " + student.getLastName() + "\n");
+        System.out.printf("theStudent: " + student.getFirstName() + " " + student.getLastName() + student.getCountry() + "\n");
 
         return "student-confirmation";
     }
