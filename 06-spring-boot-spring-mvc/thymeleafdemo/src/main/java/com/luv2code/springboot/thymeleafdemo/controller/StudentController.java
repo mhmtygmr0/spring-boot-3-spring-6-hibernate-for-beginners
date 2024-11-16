@@ -18,13 +18,13 @@ public class StudentController {
         // add student object to the model
         model.addAttribute("student", student);
 
-        return "student-from";
+        return "student-form";
     }
 
     @PostMapping("/processStudentForm")
     public String processForm(@ModelAttribute("student") Student student) {
         // log the input data
-        System.out.printf("theStudent: " + student.getFirstName() + " " + student.getLastName());
+        System.out.printf("theStudent: " + student.getFirstName() + " " + student.getLastName() + "\n");
 
         return "student-confirmation";
     }
