@@ -16,6 +16,9 @@ public class StudentController {
     @Value("${countries}")
     private List<String> countries;
 
+    @Value("${favoriteLanguages}")
+    private List<String> favoriteLanguages;
+
     @GetMapping("/showStudentForm")
     public String showForm(Model model) {
         // create a student object
@@ -27,6 +30,9 @@ public class StudentController {
         // add the list of countries to the model
         model.addAttribute("countries", this.countries);
 
+        // add the list of languages to the model
+        model.addAttribute("favoriteLanguages", this.favoriteLanguages);
+
         return "student-form";
     }
 
@@ -36,6 +42,7 @@ public class StudentController {
         System.out.println("Student: " + student.getFirstName() + " " + student.getLastName());
         System.out.println("Country: " + student.getCountry());
         System.out.println("Favorite Programing Language: " + student.getFavoriteLanguage());
+        System.out.println("---------------------------------");
 
         return "student-confirmation";
     }
