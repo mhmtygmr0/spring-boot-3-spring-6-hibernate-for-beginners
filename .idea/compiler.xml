@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="02-spring-boot-spring-core" />
-        <module name="cruddemo" />
         <module name="thymeleafdemo" />
         <module name="cruddemo (1) (com.luv2code.springboot)" />
         <module name="cruddemo (1) (com.luv2code)" />
@@ -19,12 +18,6 @@
         <module name="cruddemo (1)" />
         <module name="restdemo" />
         <module name="mycoolapp" />
-      </profile>
-      <profile name="Annotation profile for cruddemo" enabled="true">
-        <sourceOutputDir name="../cruddemo2/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../cruddemo2/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cruddemo (2)" />
       </profile>
       <profile name="Annotation profile for cruddemo (3)" enabled="true">
         <sourceOutputDir name="../../05-spring-boot-rest-security/00-spring-boot-rest-security-employee-starter-code/target/generated-sources/annotations" />
@@ -38,17 +31,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (4)" />
       </profile>
-      <profile name="Annotation profile for cruddemo (5)" enabled="true">
-        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cruddemo (5)" />
-      </profile>
       <profile name="Annotation profile for cruddemo (6)" enabled="true">
         <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (6)" />
+      </profile>
+      <profile name="Annotation profile for cruddemo" enabled="true">
+        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cruddemo" />
+        <module name="cruddemo (5)" />
+        <module name="cruddemo (2)" />
       </profile>
     </annotationProcessing>
   </component>

@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/05-spring-boot-rest-security/01-spring-boot-rest-security-employee-starter-code/pom.xml" />
         <option value="$PROJECT_DIR$/06-spring-boot-spring-mvc/thymeleafdemo/pom.xml" />
         <option value="$PROJECT_DIR$/06-spring-boot-spring-mvc/validationdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/07-spring-boot-spring-mvc-crud/00-spring-boot-spring-mvc-crud-starter-code-employees/pom.xml" />
       </list>
     </option>
   </component>
