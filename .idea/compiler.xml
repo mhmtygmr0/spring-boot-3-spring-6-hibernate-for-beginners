@@ -31,12 +31,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (4)" />
       </profile>
-      <profile name="Annotation profile for cruddemo (6)" enabled="true">
-        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cruddemo (6)" />
-      </profile>
       <profile name="Annotation profile for cruddemo (2)" enabled="true">
         <sourceOutputDir name="../cruddemo2/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../cruddemo2/target/generated-test-sources/test-annotations" />
@@ -44,15 +38,14 @@
         <module name="cruddemo (2)" />
       </profile>
       <profile name="Annotation profile for cruddemo" enabled="true">
-        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (5)" />
+        <module name="cruddemo" />
+        <module name="cruddemo (6)" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cruddemo" target="23" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
