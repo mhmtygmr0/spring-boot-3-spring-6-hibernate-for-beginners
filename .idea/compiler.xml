@@ -42,10 +42,12 @@
         <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (5)" />
-        <module name="cruddemo" />
         <module name="cruddemo (6)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cruddemo" target="23" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
