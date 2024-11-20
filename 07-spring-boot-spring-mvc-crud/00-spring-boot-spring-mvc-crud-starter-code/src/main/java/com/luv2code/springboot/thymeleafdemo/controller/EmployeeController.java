@@ -5,6 +5,8 @@ import com.luv2code.springboot.thymeleafdemo.service.EmployeeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -30,5 +32,15 @@ public class EmployeeController {
         model.addAttribute("employees", employees);
 
         return "list-employees";
+    }
+
+    @PostMapping("/save")
+    public String saveEmployee(@ModelAttribute("employee") Employee employee) {
+
+        //
+        this.employeeService.save(employee);
+
+        //
+        return "redirect:/employees/list";
     }
 }
