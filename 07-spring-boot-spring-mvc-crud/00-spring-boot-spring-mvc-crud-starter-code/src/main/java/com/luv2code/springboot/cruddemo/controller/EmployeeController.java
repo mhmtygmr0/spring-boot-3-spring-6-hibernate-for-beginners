@@ -31,6 +31,4 @@ public class EmployeeController {
 
         return "list-employees";
     }
-
-
 }
