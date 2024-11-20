@@ -48,10 +48,10 @@ public class EmployeeController {
     @PostMapping("/save")
     public String saveEmployee(@ModelAttribute("employee") Employee employee) {
 
-        //
+        // save the employee
         this.employeeService.save(employee);
 
-        //
+        // use a redirect to prevent duplicate submissions
         return "redirect:/employees/list";
     }
 }
