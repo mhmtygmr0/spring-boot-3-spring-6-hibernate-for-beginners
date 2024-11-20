@@ -34,6 +34,17 @@ public class EmployeeController {
         return "list-employees";
     }
 
+    @GetMapping("/showFormForAdd")
+    public String showFormForAdd(Model model) {
+
+        // create model attribute to bind form data
+        Employee employee = new Employee();
+
+        model.addAttribute("employee", employee);
+
+        return "employee-form";
+    }
+
     @PostMapping("/save")
     public String saveEmployee(@ModelAttribute("employee") Employee employee) {
 
