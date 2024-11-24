@@ -11,6 +11,7 @@
         <module name="thymeleafdemo" />
         <module name="cruddemo (1) (com.luv2code.springboot)" />
         <module name="cruddemo (1) (com.luv2code)" />
+        <module name="demosecurity" />
         <module name="cruddemo (2) (com.luv2code.springboot)" />
         <module name="validationdemo" />
         <module name="cruddemo3" />
@@ -44,9 +45,16 @@
         <module name="cruddemo (5)" />
         <module name="cruddemo (6)" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" />
+        </processorPath>
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cruddemo" target="23" />
+      <module name="demosecurity.main" target="23" />
+      <module name="demosecurity.test" target="23" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -64,6 +72,7 @@
       <module name="cruddemo (5)" options="-parameters" />
       <module name="cruddemo (6)" options="-parameters" />
       <module name="cruddemo3" options="-parameters" />
+      <module name="demosecurity" options="-parameters" />
       <module name="mycoolapp" options="-parameters" />
       <module name="restdemo" options="-parameters" />
       <module name="thymeleafdemo" options="-parameters" />
