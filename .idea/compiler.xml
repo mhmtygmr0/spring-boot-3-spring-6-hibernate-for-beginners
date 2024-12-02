@@ -38,18 +38,33 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo (2)" />
       </profile>
-      <profile name="Annotation profile for cruddemo" enabled="true">
-        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cruddemo (5)" />
-        <module name="cruddemo (6)" />
-      </profile>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" />
         </processorPath>
+      </profile>
+      <profile name="Annotation profile for cruddemo (5)" enabled="true">
+        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo3/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cruddemo (5)" />
+      </profile>
+      <profile name="Annotation profile for cruddemo" enabled="true">
+        <sourceOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../04-spring-boot-rest-crud/cruddemo2/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cruddemo" />
+        <module name="cruddemo (6)" />
+      </profile>
+      <profile name="Annotation profile for cruddemo (2) (com.luv2code)" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="cruddemo (2) (com.luv2code)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -66,6 +81,7 @@
       <module name="cruddemo (1) (com.luv2code)" options="-parameters" />
       <module name="cruddemo (1) (com.luv2code.springboot)" options="-parameters" />
       <module name="cruddemo (2)" options="-parameters" />
+      <module name="cruddemo (2) (com.luv2code)" options="-parameters" />
       <module name="cruddemo (2) (com.luv2code.springboot)" options="-parameters" />
       <module name="cruddemo (3)" options="-parameters" />
       <module name="cruddemo (4)" options="-parameters" />
