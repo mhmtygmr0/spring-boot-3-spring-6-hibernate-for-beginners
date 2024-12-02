@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 @Entity
 @Table(name = "instructor_detail")
 public class InstructorDetail {
@@ -30,5 +29,10 @@ public class InstructorDetail {
     private String hobby;
 
     public InstructorDetail() {
+    }
+
+    public InstructorDetail(String youtubeChannel, String hobby) {
+        this.youtubeChannel = youtubeChannel;
+        this.hobby = hobby;
     }
 }
