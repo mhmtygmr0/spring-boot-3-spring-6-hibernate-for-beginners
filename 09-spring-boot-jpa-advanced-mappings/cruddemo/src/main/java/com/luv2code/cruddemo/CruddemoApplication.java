@@ -18,8 +18,19 @@ public class CruddemoApplication {
     @Bean
     public CommandLineRunner commandLineRunner(AppDAO appDAO) {
         return runner -> {
-            findInstructor(appDAO);
+            //this.createInstructor(appDAO);
+            //this.findInstructor(appDAO);
+            this.deleteInstructor(appDAO);
         };
+    }
+
+    private void deleteInstructor(AppDAO appDAO) {
+        int id = 4;
+        System.out.println("Deleting instructor id; " + id);
+
+        appDAO.delete(id);
+
+        System.out.println("Done!");
     }
 
     private void findInstructor(AppDAO appDAO) {
@@ -45,14 +56,10 @@ public class CruddemoApplication {
          */
 
         // create the instructor
-        Instructor newInstructor =
-                new Instructor("Madhu", "Patel", "madhu@luv2code.com");
+        Instructor newInstructor = new Instructor("Madhu", "Patel", "madhu@luv2code.com");
 
         // create the instructor detail
-        InstructorDetail newInstructorDetail =
-                new InstructorDetail(
-                        "http:www.luv2code.com/youtube",
-                        "Guitar");
+        InstructorDetail newInstructorDetail = new InstructorDetail("http:www.luv2code.com/youtube", "Guitar");
 
 
         // associate the objects
