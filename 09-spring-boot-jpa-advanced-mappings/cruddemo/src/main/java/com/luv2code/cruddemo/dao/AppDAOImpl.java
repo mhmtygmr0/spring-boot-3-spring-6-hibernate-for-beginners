@@ -30,7 +30,7 @@ public class AppDAOImpl implements AppDAO {
 
     @Override
     @Transactional
-    public void delete(int id) {
+    public void deleteInstructorById(int id) {
         Instructor instructor = this.entityManager.find(Instructor.class, id);
         this.entityManager.remove(instructor);
     }
@@ -38,5 +38,12 @@ public class AppDAOImpl implements AppDAO {
     @Override
     public InstructorDetail findInstructorDetailById(int id) {
         return this.entityManager.find(InstructorDetail.class, id);
+    }
+
+    @Override
+    @Transactional
+    public void deleteInstructorDetailById(int id) {
+        InstructorDetail instructorDetail = this.entityManager.find(InstructorDetail.class, id);
+        this.entityManager.remove(instructorDetail);
     }
 }
