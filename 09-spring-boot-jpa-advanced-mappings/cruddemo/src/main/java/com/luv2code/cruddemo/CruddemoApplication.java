@@ -31,8 +31,26 @@ public class CruddemoApplication {
             // this.findInstructorWithCourses(appDAO);
             // this.findCoursesForInstructor(appDAO);
             // this.findInstructorWithCoursesJoinFetch(appDAO);
-            this.updateInstructor(appDAO);
+            // this.updateInstructor(appDAO);
+            this.updateCourse(appDAO);
         };
+    }
+
+    private void updateCourse(AppDAO appDAO) {
+        int id = 10;
+
+        // find the instructor
+        System.out.println("Finding course id: " + id);
+        Course course = appDAO.findCourseById(id);
+
+        // update the instructor
+        System.out.println("Updating course id: " + id);
+        course.setTitle("Enjoy the Simple Things");
+
+        appDAO.update(course);
+
+
+        System.out.println("Done!");
     }
 
     private void updateInstructor(AppDAO appDAO) {

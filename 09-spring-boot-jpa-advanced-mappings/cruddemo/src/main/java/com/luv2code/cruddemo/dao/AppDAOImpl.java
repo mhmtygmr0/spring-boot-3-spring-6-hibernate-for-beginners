@@ -55,9 +55,7 @@ public class AppDAOImpl implements AppDAO {
     @Override
     public List<Course> findCoursesByInstructorId(int id) {
         // create query
-        TypedQuery<Course> query = this.entityManager.createQuery(
-                "FROM Course WHERE instructor.id = :data", Course.class
-        );
+        TypedQuery<Course> query = this.entityManager.createQuery("FROM Course WHERE instructor.id = :data", Course.class);
 
         query.setParameter("data", id);
 
@@ -68,15 +66,15 @@ public class AppDAOImpl implements AppDAO {
     }
 
     @Override
+    public Course findCourseById(int id) {
+        return this.entityManager.find(Course.class, id);
+    }
+
+    @Override
     public Instructor findInstructorByIdJoinFetch(int id) {
 
         // create query
-        TypedQuery<Instructor> query = this.entityManager.createQuery(
-                "SELECT i FROM Instructor i "
-                        + "JOIN FETCH i.courses "
-                        + "JOIN FETCH i.instructorDetail "
-                        + "WHERE i.id = :data", Instructor.class
-        );
+        TypedQuery<Instructor> query = this.entityManager.createQuery("SELECT i FROM Instructor i " + "JOIN FETCH i.courses " + "JOIN FETCH i.instructorDetail " + "WHERE i.id = :data", Instructor.class);
 
         query.setParameter("data", id);
 
@@ -90,5 +88,11 @@ public class AppDAOImpl implements AppDAO {
     @Transactional
     public void update(Instructor instructor) {
         this.entityManager.merge(instructor);
+    }
+
+    @Override
+    @Transactional
+    public void update(Course course) {
+        this.entityManager.merge(course);
     }
 }
