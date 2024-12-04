@@ -33,7 +33,7 @@ public class CruddemoApplication {
             // this.findInstructorWithCoursesJoinFetch(appDAO);
             // this.updateInstructor(appDAO);
             // this.updateCourse(appDAO);
-            this.deleteCourse(appDAO);
+            // this.deleteCourse(appDAO);
         };
     }
 
