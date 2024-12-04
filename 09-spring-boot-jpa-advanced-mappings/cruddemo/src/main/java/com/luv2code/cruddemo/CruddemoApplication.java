@@ -38,10 +38,27 @@ public class CruddemoApplication {
         InstructorDetail newInstructorDetail =
                 new InstructorDetail("http:www.luv2code.com/youtube", "Luv 2 code!!!");
 
-        Course newCourse = new Course("");
         // associate the objects
         newInstructor.setInstructorDetail(newInstructorDetail);
 
+        // create some courses
+        Course newCourse1 = new Course("Air Guitar - The Ultimate Guide");
+        Course newCourse2 = new Course("The Pinball Masterclass");
+
+        // add courses to instructor
+        newInstructor.add(newCourse1);
+        newInstructor.add(newCourse2);
+
+        // save the instructor
+        //
+        // NOTE: this will ALSO save the courses
+        // because of CascadeType.PERSIST
+        //
+        System.out.println("Saving instructor: " + newInstructor);
+        System.out.println("The courses: " + newInstructor.getCourses());
+        appDAO.save(newInstructor);
+
+        System.out.println("Done!");
     }
 
     private void deleteInstructorDetail(AppDAO appDAO) {
