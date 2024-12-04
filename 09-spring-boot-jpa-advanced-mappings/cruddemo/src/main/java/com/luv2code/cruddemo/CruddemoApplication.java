@@ -19,14 +19,25 @@ public class CruddemoApplication {
     @Bean
     public CommandLineRunner commandLineRunner(AppDAO appDAO) {
         return runner -> {
-            //this.createInstructor(appDAO);
-            //this.findInstructor(appDAO);
-            //this.deleteInstructor(appDAO);
-            //this.findInstructorDetail(appDAO);
-            //this.deleteInstructorDetail(appDAO);
+            // this.createInstructor(appDAO);
+            // this.findInstructor(appDAO);
+            // this.deleteInstructor(appDAO);
+            // this.findInstructorDetail(appDAO);
+            // this.deleteInstructorDetail(appDAO);
 
-            this.createInstructorWithCourses(appDAO);
+            // this.createInstructorWithCourses(appDAO);
+            this.findInstructorWithCourses(appDAO);
         };
+    }
+
+    private void findInstructorWithCourses(AppDAO appDAO) {
+        int id = 1;
+        System.out.println("Finding instructor id: " + id);
+
+        Instructor tempInstructor = appDAO.findInstructorById(id);
+
+        System.out.println("tempInstructor: " + tempInstructor);
+        System.out.println("the associated courses: " + tempInstructor.getCourses());
     }
 
     private void createInstructorWithCourses(AppDAO appDAO) {
