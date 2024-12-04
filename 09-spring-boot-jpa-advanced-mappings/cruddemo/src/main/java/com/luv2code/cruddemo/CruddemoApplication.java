@@ -33,7 +33,18 @@ public class CruddemoApplication {
             // this.findInstructorWithCoursesJoinFetch(appDAO);
             // this.updateInstructor(appDAO);
             // this.updateCourse(appDAO);
+            this.deleteCourse(appDAO);
         };
+    }
+
+    private void deleteCourse(AppDAO appDAO) {
+        int id = 11;
+
+        System.out.println("Deleting course id: " + id);
+
+        appDAO.deleteCourseById(id);
+
+        System.out.println("Done!");
     }
 
     private void updateCourse(AppDAO appDAO) {
@@ -115,12 +126,10 @@ public class CruddemoApplication {
 
     private void createInstructorWithCourses(AppDAO appDAO) {
         // create the instructor
-        Instructor newInstructor =
-                new Instructor("Chad", "Darby", "darby@luv2code.com");
+        Instructor newInstructor = new Instructor("Chad", "Darby", "darby@luv2code.com");
 
         // create the instructor detail
-        InstructorDetail newInstructorDetail =
-                new InstructorDetail("http:www.luv2code.com/youtube", "Luv 2 code!!!");
+        InstructorDetail newInstructorDetail = new InstructorDetail("http:www.luv2code.com/youtube", "Luv 2 code!!!");
 
         // associate the objects
         newInstructor.setInstructorDetail(newInstructorDetail);
