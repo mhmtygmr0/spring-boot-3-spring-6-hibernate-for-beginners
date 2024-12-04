@@ -1,6 +1,7 @@
 package com.luv2code.cruddemo;
 
 import com.luv2code.cruddemo.dao.AppDAO;
+import com.luv2code.cruddemo.entity.Course;
 import com.luv2code.cruddemo.entity.Instructor;
 import com.luv2code.cruddemo.entity.InstructorDetail;
 import org.springframework.boot.CommandLineRunner;
@@ -22,8 +23,25 @@ public class CruddemoApplication {
             //this.findInstructor(appDAO);
             //this.deleteInstructor(appDAO);
             //this.findInstructorDetail(appDAO);
-            this.deleteInstructorDetail(appDAO);
+            //this.deleteInstructorDetail(appDAO);
+
+            this.createInstructorWithCourses(appDAO);
         };
+    }
+
+    private void createInstructorWithCourses(AppDAO appDAO) {
+        // create the instructor
+        Instructor newInstructor =
+                new Instructor("Chad", "Darby", "darby@luv2code.com");
+
+        // create the instructor detail
+        InstructorDetail newInstructorDetail =
+                new InstructorDetail("http:www.luv2code.com/youtube", "Luv 2 code!!!");
+
+        Course newCourse = new Course("");
+        // associate the objects
+        newInstructor.setInstructorDetail(newInstructorDetail);
+
     }
 
     private void deleteInstructorDetail(AppDAO appDAO) {
@@ -68,17 +86,6 @@ public class CruddemoApplication {
     }
 
     private void createInstructor(AppDAO appDAO) {
-        /*
-        // create the instructor
-        Instructor newInstructor =
-                new Instructor("Chad", "Darby", "darby@luv2code.com");
-
-        // create the instructor detail
-        InstructorDetail newInstructorDetail =
-                new InstructorDetail("http:www.luv2code.com/youtube", "Luv 2 code!!!");
-
-         */
-
         // create the instructor
         Instructor newInstructor = new Instructor("Madhu", "Patel", "madhu@luv2code.com");
 
