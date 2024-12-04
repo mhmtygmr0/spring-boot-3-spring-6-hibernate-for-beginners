@@ -23,7 +23,7 @@ public class CruddemoApplication {
         return runner -> {
             // this.createInstructor(appDAO);
             // this.findInstructor(appDAO);
-            this.deleteInstructor(appDAO);
+            // this.deleteInstructor(appDAO);
             // this.findInstructorDetail(appDAO);
             // this.deleteInstructorDetail(appDAO);
 
