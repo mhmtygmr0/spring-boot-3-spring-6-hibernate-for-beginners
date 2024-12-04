@@ -23,7 +23,7 @@ public class CruddemoApplication {
         return runner -> {
             // this.createInstructor(appDAO);
             // this.findInstructor(appDAO);
-            // this.deleteInstructor(appDAO);
+            this.deleteInstructor(appDAO);
             // this.findInstructorDetail(appDAO);
             // this.deleteInstructorDetail(appDAO);
 
@@ -32,7 +32,7 @@ public class CruddemoApplication {
             // this.findCoursesForInstructor(appDAO);
             // this.findInstructorWithCoursesJoinFetch(appDAO);
             // this.updateInstructor(appDAO);
-            this.updateCourse(appDAO);
+            // this.updateCourse(appDAO);
         };
     }
 
@@ -168,7 +168,7 @@ public class CruddemoApplication {
     }
 
     private void deleteInstructor(AppDAO appDAO) {
-        int id = 4;
+        int id = 1;
         System.out.println("Deleting instructor id; " + id);
 
         appDAO.deleteInstructorById(id);
