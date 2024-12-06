@@ -54,7 +54,6 @@ public class Review {
         return "Review{" +
                 "id=" + id +
                 ", comment='" + comment + '\'' +
-                ", course=" + course +
                 '}';
     }
 }
