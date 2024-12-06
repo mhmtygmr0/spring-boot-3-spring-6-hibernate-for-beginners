@@ -14,7 +14,7 @@ public class Review {
     @Column(name = "comment")
     private String comment;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "course_id")
     Course course;
 
@@ -49,5 +49,12 @@ public class Review {
         this.course = course;
     }
 
-
+    @Override
+    public String toString() {
+        return "Review{" +
+                "id=" + id +
+                ", comment='" + comment + '\'' +
+                ", course=" + course +
+                '}';
+    }
 }

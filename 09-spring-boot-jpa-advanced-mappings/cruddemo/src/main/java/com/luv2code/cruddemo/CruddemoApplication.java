@@ -4,6 +4,7 @@ import com.luv2code.cruddemo.dao.AppDAO;
 import com.luv2code.cruddemo.entity.Course;
 import com.luv2code.cruddemo.entity.Instructor;
 import com.luv2code.cruddemo.entity.InstructorDetail;
+import com.luv2code.cruddemo.entity.Review;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -34,7 +35,29 @@ public class CruddemoApplication {
             // this.updateInstructor(appDAO);
             // this.updateCourse(appDAO);
             // this.deleteCourse(appDAO);
+
+            this.createCourse(appDAO);
         };
+    }
+
+    private void createCourse(AppDAO appDAO) {
+
+        // create a course
+        Course newCourse = new Course("Pacman - How To Score One Million Points");
+
+        // add some reviews
+        newCourse.addReview(new Review("Great course ... loved it!"));
+        newCourse.addReview(new Review("Cool course job well done."));
+        newCourse.addReview(new Review("What a dumb course, you are an idiot!"));
+
+        // save the course ... and leverage the cascade all
+        System.out.println("Saving course");
+        System.out.println(newCourse);
+        System.out.println(newCourse.getReviews());
+
+        appDAO.save(newCourse); // Cascade işlemi sayesinde review'lar da kaydedilecek
+
+        System.out.println("Done!");
     }
 
     private void deleteCourse(AppDAO appDAO) {
