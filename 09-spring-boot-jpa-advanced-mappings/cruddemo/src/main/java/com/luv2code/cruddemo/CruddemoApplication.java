@@ -38,7 +38,18 @@ public class CruddemoApplication {
 
             // this.createCourse(appDAO);
             // this.retrieveCourseAndReviews(appDAO);
+            // this.deleteCourseAndReviews(appDAO);
         };
+    }
+
+    private void deleteCourseAndReviews(AppDAO appDAO) {
+        int id = 10;
+
+        System.out.println("Deleting course id; " + id);
+
+        appDAO.deleteCourseById(id);
+
+        System.out.println("Done!");
     }
 
     private void retrieveCourseAndReviews(AppDAO appDAO) {
