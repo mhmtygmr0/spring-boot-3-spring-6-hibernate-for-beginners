@@ -49,12 +49,5 @@ public class Review {
         this.course = course;
     }
 
-    @Override
-    public String toString() {
-        return "Review{" +
-                "id=" + id +
-                ", comment='" + comment + '\'' +
-                ", course=" + course +
-                '}';
-    }
+
 }
