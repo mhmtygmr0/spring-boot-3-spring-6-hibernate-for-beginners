@@ -37,8 +37,20 @@ public class CruddemoApplication {
             // this.retrieveCourseAndReviews(appDAO);
             // this.deleteCourseAndReviews(appDAO);
 
-            this.createCourseAndStudents(appDAO);
+            // this.createCourseAndStudents(appDAO);
+            // this.findCourseAndStudents(appDAO);
         };
+    }
+
+    private void findCourseAndStudents(AppDAO appDAO) {
+        int id = 10;
+
+        Course course = appDAO.findCourseAndStudentsByCourseId(id);
+
+        System.out.println("Loaded course: " + course);
+        System.out.println("Students: " + course.getStudents());
+
+        System.out.println("Done!");
     }
 
     private void createCourseAndStudents(AppDAO appDAO) {
