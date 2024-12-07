@@ -57,7 +57,7 @@ public class CruddemoApplication {
         student.addCourse(course1);
         student.addCourse(course2);
 
-        System.out.println("Saving student: " + student);
+        System.out.println("Updating student: " + student);
         System.out.println("associated courses: " + student.getCourses());
 
         appDAO.update(student);
