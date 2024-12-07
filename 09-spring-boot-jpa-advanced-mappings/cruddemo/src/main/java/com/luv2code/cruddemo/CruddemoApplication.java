@@ -41,7 +41,7 @@ public class CruddemoApplication {
             // this.findCourseAndStudents(appDAO);
             // this.findStudentAndCourses(appDAO);
             // this.addMoreCoursesForStudent(appDAO);
-            this.deleteCourse(appDAO);
+            // this.deleteCourse(appDAO);
         };
     }
 
