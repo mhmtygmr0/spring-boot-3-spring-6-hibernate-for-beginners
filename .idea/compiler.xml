@@ -7,16 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cruddemo (1) (com.luv2code.springboot)" />
+        <module name="demosecurity" />
+        <module name="validationdemo" />
+        <module name="cruddemo (1)" />
         <module name="02-spring-boot-spring-core" />
         <module name="thymeleafdemo" />
-        <module name="cruddemo (1) (com.luv2code.springboot)" />
         <module name="cruddemo (1) (com.luv2code)" />
-        <module name="demosecurity" />
         <module name="cruddemo (2) (com.luv2code.springboot)" />
-        <module name="validationdemo" />
         <module name="cruddemo3" />
+        <module name="aopdemo" />
         <module name="01-spring-boot-overview" />
-        <module name="cruddemo (1)" />
         <module name="restdemo" />
         <module name="mycoolapp" />
       </profile>
@@ -76,6 +77,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="01-spring-boot-overview" options="-parameters" />
       <module name="02-spring-boot-spring-core" options="-parameters" />
+      <module name="aopdemo" options="-parameters" />
       <module name="cruddemo" options="-parameters" />
       <module name="cruddemo (1)" options="-parameters" />
       <module name="cruddemo (1) (com.luv2code)" options="-parameters" />
