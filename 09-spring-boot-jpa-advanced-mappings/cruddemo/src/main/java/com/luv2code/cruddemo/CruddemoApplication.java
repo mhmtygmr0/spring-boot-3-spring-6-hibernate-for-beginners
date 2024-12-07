@@ -40,7 +40,7 @@ public class CruddemoApplication {
             // this.createCourseAndStudents(appDAO);
             // this.findCourseAndStudents(appDAO);
             // this.findStudentAndCourses(appDAO);
-            this.addMoreCoursesForStudent(appDAO);
+            // this.addMoreCoursesForStudent(appDAO);
         };
     }
 
