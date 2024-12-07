@@ -60,7 +60,7 @@ public class CruddemoApplication {
         System.out.println("Saving student: " + student);
         System.out.println("associated courses: " + student.getCourses());
 
-        appDAO.update(Student);
+        appDAO.update(student);
 
         System.out.println("Done!");
     }
