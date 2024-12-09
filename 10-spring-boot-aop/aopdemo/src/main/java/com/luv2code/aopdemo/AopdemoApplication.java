@@ -29,7 +29,7 @@ public class AopdemoApplication {
         accountDao.addAccount();
 
         // call the membership business method
-        membershipDAO.addAccount();
+        membershipDAO.addSillMember();
 
     }
 
