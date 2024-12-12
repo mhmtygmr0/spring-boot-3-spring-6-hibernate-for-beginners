@@ -17,8 +17,6 @@ public class AopdemoApplication {
     @Bean
     public CommandLineRunner commandLineRunner(AccountDAO accountDao, MembershipDAO membershipDAO) {
         return runner -> {
-            System.out.println("Hello World!");
-
             this.demoTheBeforeAdvice(accountDao, membershipDAO);
         };
     }
