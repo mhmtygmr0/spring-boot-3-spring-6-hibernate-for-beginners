@@ -13,7 +13,7 @@ public class MyDemoLoggingAspect {
 
     }
 
-    @Before("execution(* com.luv2code.aopdemo.dao.*.*(..))")
+    @Before("forDaoPackage()")
     public void beforeAddAccountAdvice() {
         System.out.println("\n====>>> Executing @Before advice on addAccount()");
     }
