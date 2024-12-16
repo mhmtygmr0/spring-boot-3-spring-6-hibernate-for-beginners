@@ -2,6 +2,7 @@ package com.luv2code.aopdemo;
 
 import com.luv2code.aopdemo.dao.AccountDAO;
 import com.luv2code.aopdemo.dao.MembershipDAO;
+import com.luv2code.aopdemo.dao.service.TrafficFortuneService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,14 +18,22 @@ public class AopdemoApplication {
     }
 
     @Bean
-    public CommandLineRunner commandLineRunner(AccountDAO accountDao, MembershipDAO membershipDAO) {
+    public CommandLineRunner commandLineRunner(AccountDAO accountDao, MembershipDAO membershipDAO, TrafficFortuneService trafficFortuneService) {
         return runner -> {
             // this.demoTheBeforeAdvice(accountDao, membershipDAO);
             // this.demoTheAfterReturningAdvice(accountDao);
-
             // this.demoTheAfterThrowingAdvice(accountDao);
-            this.demoTheAfterAdvice(accountDao);
+            // this.demoTheAfterAdvice(accountDao);
+            this.demoTheAroundAdvice(trafficFortuneService);
         };
+    }
+
+    private void demoTheAroundAdvice(TrafficFortuneService trafficFortuneService) {
+        System.out.println("\nMain Program: demoTheAroundAdvice");
+        System.out.println("Calling getFortune()");
+        String data = trafficFortuneService.getFortune();
+        System.out.println("\nMy fortune is: " + data);
+        System.out.println("Finished");
     }
 
     private void demoTheAfterAdvice(AccountDAO accountDao) {

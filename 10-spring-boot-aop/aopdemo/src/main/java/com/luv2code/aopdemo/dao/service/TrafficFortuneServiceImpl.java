@@ -1,7 +1,10 @@
 package com.luv2code.aopdemo.dao.service;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.concurrent.TimeUnit;
 
+@Repository
 public class TrafficFortuneServiceImpl implements TrafficFortuneService {
     @Override
     public String getFortune() {
