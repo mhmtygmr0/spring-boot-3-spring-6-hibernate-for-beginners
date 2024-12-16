@@ -1,6 +1,7 @@
 package com.luv2code.springboot.thymeleafdemo.aspect;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -40,6 +41,16 @@ public class DemoLoggingAspect {
         // display method we are calling
         String theMethod = theJoinPoint.getSignature().toShortString();
         myLogger.info("=====>> in @Before: calling method: " + theMethod);
+
+        // display the arguments to the method
+
+        // get the arguments
+        Object[] args = theJoinPoint.getArgs();
+
+        // loop thru and display args
+        for (Object tempArg : args) {
+            myLogger.info("=====>> argument: " + tempArg);
+        }
 
     }
 }
