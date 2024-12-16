@@ -23,7 +23,15 @@ public class MyDemoLoggingAspect {
 
         long begin = System.currentTimeMillis();
 
-        Object result = proceedingJoinPoint.proceed();
+        Object result = null;
+
+        try {
+            result = proceedingJoinPoint.proceed();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+
+            result = "Major accident! But no worriesi your private AOP helicopter is on the way!";
+        }
 
         long end = System.currentTimeMillis();
 
