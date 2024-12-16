@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -25,6 +26,7 @@
         <option value="$PROJECT_DIR$/08-spring-boot-spring-mvc-security/demosecurity/pom.xml" />
         <option value="$PROJECT_DIR$/09-spring-boot-jpa-advanced-mappings/cruddemo/pom.xml" />
         <option value="$PROJECT_DIR$/10-spring-boot-aop/aopdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/10-spring-boot-aop/spring-boot-mvc-crud-demo-employees/pom.xml" />
       </list>
     </option>
   </component>
