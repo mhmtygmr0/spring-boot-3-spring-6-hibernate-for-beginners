@@ -53,6 +53,21 @@ public class DemoLoggingAspect {
         }
 
     }
+
+    // add @AfterReturning advice
+    @AfterReturning(
+            pointcut = "forAppFlow()",
+            returning = "theResult")
+    public void afterReturning(JoinPoint theJoinPoint, Object theResult) {
+
+        // display method we are returning from
+        String theMethod = theJoinPoint.getSignature().toShortString();
+        myLogger.info("=====>> in @AfterReturning: from method: " + theMethod);
+
+        // display data returned
+        myLogger.info("=====>> result: " + theResult);
+
+    }
 }
 
 
